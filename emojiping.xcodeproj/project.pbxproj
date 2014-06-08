@@ -16,6 +16,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9053BE47194404E400E67B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90B3CF6C1943F9CD000678FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90B3CF731943F9CD000678FA;
+			remoteInfo = emojiping;
+		};
 		90B3CF871943F9CD000678FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 90B3CF6C1943F9CD000678FA /* Project object */;
@@ -159,6 +166,7 @@
 			);
 			dependencies = (
 				90B3CF881943F9CD000678FA /* PBXTargetDependency */,
+				9053BE48194404E400E67B66 /* PBXTargetDependency */,
 			);
 			name = emojipingTests;
 			productName = emojipingTests;
@@ -275,6 +283,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9053BE48194404E400E67B66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90B3CF731943F9CD000678FA /* emojiping */;
+			targetProxy = 9053BE47194404E400E67B66 /* PBXContainerItemProxy */;
+		};
 		90B3CF881943F9CD000678FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 90B3CF731943F9CD000678FA /* emojiping */;
@@ -380,6 +393,7 @@
 				INFOPLIST_FILE = emojiping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "emojiping/emojiping-bridging.h";
 			};
 			name = Debug;
 		};
@@ -392,7 +406,7 @@
 				INFOPLIST_FILE = emojiping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "emojiping/emojiping-bridging.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "emojiping/emojiping-bridging.h";
 			};
 			name = Release;
 		};
