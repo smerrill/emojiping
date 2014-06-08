@@ -1,0 +1,14 @@
+PODS:
+  - CDZPinger (1.0.1)
+
+DEPENDENCIES:
+  - CDZPinger (from `https://github.com/smerrill/CDZPinger.git`)
+
+EXTERNAL SOURCES:
+  CDZPinger:
+    :git: https://github.com/smerrill/CDZPinger.git
+
+SPEC CHECKSUMS:
+  CDZPinger: 828877163975c450c312032af26631609ce777a0
+
+COCOAPODS: 0.33.1
