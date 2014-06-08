@@ -19,9 +19,9 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="gYt-cX-ypc">
             <items>
-                <menuItem title="Thing" keyEquivalent="t" id="tFG-zl-Xxh"/>
                 <menuItem isSeparatorItem="YES" id="ADZ-dj-yF1"/>
-                <menuItem title="Quit" keyEquivalent="q" id="dOD-af-si8">
+                <menuItem title="Quit emojiping" id="dOD-af-si8">
+                    <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="terminate:" target="-3" id="Lhg-6z-47m"/>
                     </connections>
