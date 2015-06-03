@@ -9,9 +9,9 @@
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate, CDZPingerDelegate {
-    @IBOutlet var statusMenu : NSMenu
+    @IBOutlet var statusMenu : NSMenu!
+    var statusItem: NSStatusItem!
 
-    var statusItem: NSStatusItem?
     var pinger = CDZPinger(host: "8.8.4.4")
 
     let goodEmoji = "😃"
@@ -20,19 +20,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, CDZPingerDelegate {
 
     let restartTimeout = 1.0
     
-    func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        // Insert code here to initialize your application
-        self.statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(CGFloat(NSVariableStatusItemLength))
-        self.statusItem!.title = self.goodEmoji
-        self.statusItem!.highlightMode = true
-        self.statusItem!.menu = self.statusMenu
+    func applicationDidFinishLaunching(aNotification: NSNotification) {
+        self.statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+        self.statusItem.title = self.goodEmoji
+        self.statusItem.highlightMode = true
+        self.statusItem.menu = self.statusMenu
 
         self.pinger.delegate = self
         self.startPinging()
     }
     
-    func applicationWillTerminate(aNotification: NSNotification?) {
-        // Insert code here to tear down your application
+    func applicationWillTerminate(aNotification: NSNotification) {
         self.stopPinging()
     }
 
