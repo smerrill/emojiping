@@ -1,0 +1,1 @@
+PODS_CDZPINGER_OTHER_LDFLAGS = -framework "CFNetwork"
