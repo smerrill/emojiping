@@ -8,7 +8,12 @@ EXTERNAL SOURCES:
   CDZPinger:
     :git: https://github.com/smerrill/CDZPinger.git
 
-SPEC CHECKSUMS:
-  CDZPinger: 828877163975c450c312032af26631609ce777a0
+CHECKOUT OPTIONS:
+  CDZPinger:
+    :commit: 07f63b74751d6ff4c978eb365e6a6f32fdbd1f58
+    :git: https://github.com/smerrill/CDZPinger.git
 
-COCOAPODS: 0.33.1
+SPEC CHECKSUMS:
+  CDZPinger: 1e7f017036c818f72c8e05c3e2a3d4c0da899a95
+
+COCOAPODS: 0.37.2
